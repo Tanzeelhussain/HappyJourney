@@ -1,0 +1,552 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:sans-serif;
+}
+html{
+   scroll-behavior: smooth;
+}
+body{
+   background:#f2f2f2;
+}
+ header{
+    height: 70px;
+    background-color: #333;
+    width: 100%;
+    position:fixed;
+    z-index: 100;
+    top: 0;
+ }  
+ #nav_bar{
+    text-decoration: none;
+    display: flex;
+    justify-content:space-between ;
+    align-items: center;
+    color: white;
+    top: 0;
+ }
+ #logo{
+   padding-left: 50px;}
+ .border{ 
+    border: 2px solid transparent;
+   border-bottom: 2px solid orange;
+ }
+#nav_opt{
+   padding-left: 50px;
+   width: 600px;
+   height: 70px;
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+ }
+ a{
+   text-decoration: none;
+   color: white;
+   border-bottom: 2px solid transparent;
+ }
+a:hover{
+   border-bottom: 2px solid orange;
+   color: white;
+}
+.homepage{
+   background: url( home-bg.jpg);
+   height: 100vh;
+   width:100%;
+   position: relative;
+   background-position: center;
+   background-size: cover;
+}
+.homepage::before{
+   background: rgb(0, 0,0,0.3);
+
+}
+ .homepage #content{
+   height:85%;
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+}
+.homepage .text{
+   color: white;
+   text-align: center;
+   margin-top: 30px;
+}
+.homepage .text h1{
+   font-size: 60px;
+   font-weight: 700;
+   margin-bottom: 10px;
+margin-top: 20px;
+}
+.homepage .text p{
+   font-size: larger;
+}
+.homepage .text button{
+height: 50px;
+width:150px;
+border: 2px solid black;
+margin-top: 10px;
+border-radius: 5px;
+font-size: larger;
+font-weight: 100;
+}
+button{
+   color:white;
+   background-color: orange;
+
+}
+button:hover{
+   color:black;
+   background-color: #f2f2f2;
+}
+#Services{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: 30px;
+   flex-direction: column;
+}
+#Services h2{
+   font-size:x-large;
+   font-weight: 900;
+   padding-bottom: 10px;
+}
+.cards{
+   width:100%;
+   height: 300px;
+display: grid;
+grid-template-columns: repeat(3,1fr);
+   margin-top: 30px;
+   padding: 20px 15px;
+   grid-gap: 50px;
+   background-color:#f2f2f2;
+   
+
+
+}
+ .cardstyling{
+   min-height:220px;
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content:space-evenly;
+   align-items: center;
+   border:2px solid transparent;
+   border-radius: 5px;
+   box-shadow: 0 5px 10px rgb(0, 0,0,0.1);
+   background-color: white;
+
+   padding: 20px;
+}
+.cardstyling img{
+   height: 90px;
+   width: 90px;
+   border-radius: 50px;
+   padding-bottom: 5px;
+}
+.cardstyling p{
+   text-align: center;
+   letter-spacing: normal;
+   padding-top: 5px;
+}
+.cardstyling h3{
+font-size: larger;
+font-weight: 700;
+}
+.cards2{
+   width:100%;
+display: grid;
+grid-template-columns: repeat(3,1fr);
+   margin-top: 30px;
+   grid-gap: 50px;}
+   .cardstyling:hover{
+      height: 300px;
+      border: 2px solid transparent;
+      box-shadow: 1px 10px 10px orange;
+   
+   }
+/*sevice end*/
+
+   /*portfolio*/
+
+#Portfolio{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: 30px;
+   flex-direction: column;
+}
+#Portfolio h2{
+   font-size:x-large;
+   font-weight: 900;
+   padding-bottom: 10px;
+}
+#Parent{
+   width:100%;
+   height: 300px;
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+   margin-top: 20px;
+
+
+}
+.box1{
+   height: 270px;
+   width: 300px;
+   padding: 5px;
+   border:2px solid transparent;
+   border-radius: 5px;
+   box-shadow: 0 5px 10px rgb(0, 0,0,0.1);
+   background-color: white;
+
+
+}
+.box1 img{
+   height: 150px;
+   width:100%;
+   background-position: center;
+   background-size: cover;
+
+}
+.box1 h3{
+   font-size: medium;
+   padding-top: 10px;
+}
+.box1 p{
+   padding-top: 10px;
+   text-align: center;
+   font-size: small;
+}
+#parent-two{
+   width:100%;
+   height: 300px;
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+   margin-top: 20px;
+
+}
+.box1:hover{
+   height: 300px;
+   border: 2px solid transparent;
+   box-shadow: 1px 10px 10px orange;
+} 
+/* About*/
+.about .company-info{
+   margin-top: 30px;
+
+}
+.about .row{
+   padding: 0 10px;
+}
+.about h3{
+   margin: 30px 0 10px ;
+   font-weight: 900;
+   font-size: x-large;
+}
+
+.service{
+   width: 100%;
+   padding: 70px 0;
+   background-color: #efefef;
+}
+.about-service{
+   width: 100%;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+   margin: auto;
+}
+.single-service{
+   flex-basis: 100%;
+   text-align: center;
+   border-radius: 7px;
+   margin-bottom: 20px;
+   color: #fff;
+   position: relative;
+}
+.single-service img{
+   width: 100%;
+   border-radius: 7px;
+   
+}
+.overlay{
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   top: 0;
+   border-radius: 7px;
+   cursor: pointer;
+   background: linear-gradient(rgba(0,0,0,0.5), #009688);
+   opacity: 0;
+   transition: 1s;
+}
+.single-service:hover .overlay{
+   opacity: 1;
+}
+.service-desc{
+   width: 80%;
+   position: absolute;
+   bottom: 0;
+   left: 50%;
+   opacity: 0;
+   transform: translateX(-50%);
+   transition: 1s;
+}
+hr{
+   background: #fff;
+   height: 2px;
+   border: 0;
+   margin: 15px auto;
+   width: 60%;
+}
+.service-desc p{
+   font-size: 15px;
+}
+.single-service:hover .service-desc{
+   bottom: 40%;
+   opacity: 1;
+}
+
+@media only screen and (max-width: 600px) {
+   .single-service {
+        flex-basis: 100%;
+        margin-bottom: 30px;}
+   }
+   .service-desc p{
+       font-size: 12px;
+   }
+   hr{
+       margin: 5px auto;
+   }
+   .single-service:hover .service-desc{
+       bottom: 5% !important;
+   }
+
+  /*contact*/
+.Contact .row{
+   justify-content: space-between;
+   margin: 60px 0 90px;
+}
+.Contact .row .col{
+ padding: 0 10px;
+ width: calc(100% / 2 - 50px);
+}
+.Contact .row .col p{
+ color: #7a7a7a;
+ margin-bottom: 10px;
+}
+.Contact .row .col p i{
+ margin-right: 10px;
+}
+.Contact form input{
+ width: 100%;
+ height: 45px;
+ margin-bottom: 20px;
+ padding: 0 15px;
+ border: 1px solid #bfbfbf;
+ outline: none; 
+}
+.Contact form textarea{
+ padding: 15px;
+ width: 100%;
+ height: 150px;
+ outline: none;
+ resize: none;
+ border: 1px solid #bfbfbf;
+}
+.Contact form button{
+ padding: 10px 20px;
+ border-radius: 6px;
+ font-size: 17px;
+ color: #fff;
+ margin-top: 10px;
+ border: none;
+ background: orange;
+ cursor: pointer;
+ transition: 0.2s;
+}
+.Contact form button:hover{
+ background: orange;
+}
+
+.social{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ width: 32px;
+ height: 32px;
+ background: #eff2f8
+}
+.social a i{
+ color: orangered;
+ font-size: 30px;
+ margin: 0 2px;
+}
+
+
+.team .member{
+    position: relative;
+    padding: 30px;
+    box-shadow: 0px 20px 15px rgba(0,0,0,0.1);
+    border-radius: 5px;
+    background: #fff;
+}
+.team .member .teampic{
+    overflow: hidden;
+    width: 180px;
+    border-radius: 50%;
+}
+.team .member .member-info{
+    padding-left: 30px;
+}
+.team .member h4{
+    font-weight: 700;
+    margin-bottom: 5px;
+    font-size: 20px;
+    color: orangered;
+}
+
+.team .member span{
+    display: block;
+    font-size: 15px;
+    padding-bottom: 10px;
+    position: relative;
+    font-weight: 500;
+}
+
+.team .member span::after{
+    contain: "";
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 2px;
+    background: black;
+    bottom: 0;
+    left: 0;
+}
+.team .member p{
+    margin: 10px 0 0 0;
+    font-size: 14px;
+}
+.team .member .social{
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.team .memeber .social a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    background: #eff2f8
+ }
+ .team .member .social a i{
+    color: orangered;
+    font-size: 16px;
+    margin: 0 2px;
+}
+.team .member .social a:hover {
+     background: orangered;
+}
+.team .member .social a:hover i{
+    color: white;
+}
+.team .member .social a+a{
+    margin-left: 8px;
+}
+section{
+    padding: 60px 0;
+    overflow: hidden;
+}
+.section-title{
+    text-align: center;
+    padding-bottom: 30px;
+}
+.underline{
+    width: 150px;
+    height: 1px;
+    background-color: black;
+    margin: auto;
+    margin-top: -30px;
+}
+.section-title h2{
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    color: orangered;
+}
+.section-title p{
+    margin-top: 20px;
+}
+/*---------------------------*/
+#menu-toggler ,#hamburger-btn{
+   display: none;
+}
+/*Responsive*/
+
+@media (width <860px){
+   #nav_bar #nav_opt{
+      position:fixed;
+      left:0;
+   top:65px;
+   height:100%;
+   display: block;
+   background: #333;
+   width: 300px;
+   padding-left: 20px;
+   padding-top: 30px;
+   left:-100%;
+   transition: all 0.4 ease;
+   
+   
+   }
+   #menu-toggler:checked #nav_opt{
+      left: 0;
+   }           
+   #nav_opt a{
+      font-size: 18px;
+   
+   }
+   #hamburger-btn{
+      display: inline;
+      color:#fff;
+      font-size: 22px;
+      cursor: pointer;
+   }
+#Services .cards .cards2 .cardstyling{
+   width: calc(100%/2-15px);
+   flex-direction: column;
+
+}
+#Contact .row{
+   flex-direction: column;
+}
+#Contact .row .col{
+   width: 100%;
+}
+#Contact .row .col:last-child{
+margin-top: 40px;
+
+
+}
+}
+@media (width < 560px) {
+   .cards{
+      display: none;
+      
+   }
+#Portfolio p{
+   flex-direction: column;
+   justify-content: center;
+   
+}
+.box1{
+   width:100%;
+}
+}
